@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ClubeApi.Api",
+    "\\ClubeApi.Api\\Controllers",
+    "\\ClubeApi.Infrastructure",
+    "\\ClubeApi.Infrastructure\\Data",
+    "\\ClubeApi.Infrastructure\\Data\\Repositories"
+  ],
+  "SelectedNode": "\\ClubeApi.sln",
+  "PreviewInSolutionExplorer": false
+}

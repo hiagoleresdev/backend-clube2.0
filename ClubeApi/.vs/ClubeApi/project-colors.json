@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6e688235-27ed-4492-bc3f-3d7c35c62263": {
+      "ProjectGuid": "6e688235-27ed-4492-bc3f-3d7c35c62263",
+      "DisplayName": "ClubeApi.Application",
+      "ColorIndex": 0
+    },
+    "fa7251a5-ba8a-4648-9efa-b3a87c6f68be": {
+      "ProjectGuid": "fa7251a5-ba8a-4648-9efa-b3a87c6f68be",
+      "DisplayName": "ClubeApi.Domain",
+      "ColorIndex": 1
+    },
+    "9fa41078-4f26-4c5d-a4a0-b67bb2addc8c": {
+      "ProjectGuid": "9fa41078-4f26-4c5d-a4a0-b67bb2addc8c",
+      "DisplayName": "ClubeApi.Domain.Core",
+      "ColorIndex": 2
+    },
+    "c0c6ca3b-5887-4067-9659-7246d66e9117": {
+      "ProjectGuid": "c0c6ca3b-5887-4067-9659-7246d66e9117",
+      "DisplayName": "ClubeApi.Domain.Services",
+      "ColorIndex": 3
+    },
+    "c656cb7c-9ee7-480a-a87b-85a5ddccbd95": {
+      "ProjectGuid": "c656cb7c-9ee7-480a-a87b-85a5ddccbd95",
+      "DisplayName": "ClubeApi.Infrastructure",
+      "ColorIndex": 4
+    },
+    "334c241a-ee32-40b7-b86c-31afeedb93ab": {
+      "ProjectGuid": "334c241a-ee32-40b7-b86c-31afeedb93ab",
+      "DisplayName": "ClubeApi.Api",
+      "ColorIndex": 5
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 6
+}

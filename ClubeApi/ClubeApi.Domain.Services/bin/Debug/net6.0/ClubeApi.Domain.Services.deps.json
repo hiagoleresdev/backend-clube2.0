@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ClubeApi.Domain.Services/1.0.0": {
+        "dependencies": {
+          "ClubeApi.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "ClubeApi.Domain.Services.dll": {}
+        }
+      },
+      "ClubeApi.Domain/1.0.0": {
+        "runtime": {
+          "ClubeApi.Domain.dll": {}
+        }
+      },
+      "ClubeApi.Domain.Core/1.0.0": {
+        "dependencies": {
+          "ClubeApi.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ClubeApi.Domain.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClubeApi.Domain.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClubeApi.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClubeApi.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
