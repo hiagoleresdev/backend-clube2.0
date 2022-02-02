@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/XKFEXjMVHqXd67d47ZlgeydrDOwfbl1XBr/B6Ljg2Cogjv15EICmyxXe86wNTcUAuMpcPEnutpsmlCMNF63hw==",
+  "dgSpecHash": "9ZXypAg0FO1wABd2Ay+Qvosr64PZ3yqkft4UNjhAFK7i/ZK1XDUvn+lK1xLw+A6MlP5Az8YnQiH0hPg9aLAXrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hiago.leres\\Desktop\\DEV\\Clube dos estagiários\\backend\\ClubeApi\\ClubeApi.Domain.Core\\ClubeApi.Domain.Core.csproj",
+  "projectFilePath": "C:\\Users\\marco.almeida\\source\\repos\\Projeto-estagiarios\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Core\\ClubeApi.Domain.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

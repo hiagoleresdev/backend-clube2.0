@@ -49,3 +49,20 @@ C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeAp
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.dll
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ref\ClubeApi.Domain.Services.dll
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Services.deps.json
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Services.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ref\ClubeApi.Domain.Services.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Services.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Core.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Core.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.csproj.AssemblyReference.cache
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.AssemblyInfoInputs.cache
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.AssemblyInfo.cs
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.csproj.CoreCompileInputs.cache
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.csproj.CopyComplete
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ref\ClubeApi.Domain.Services.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.pdb

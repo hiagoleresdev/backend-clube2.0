@@ -82,12 +82,15 @@ namespace ClubeApi.Api.Controllers
         }
 
         // GET: Validar login
-        [HttpGet]
-        public ActionResult<int> Validate(string usuario, string senha)
+        [HttpGet("{usuario}/{senha}")]
+        public ActionResult Validate(string usuario, string senha)
         {
             try
             {
-                return applicationServiceFuncionario.Validate(usuario, senha);
+                if (applicationServiceFuncionario.Validate(usuario, senha) == 1)
+                    return Ok("Login efetuado com sucesso");
+                else
+                    return NotFound("O usuário informado não existe");
             }
             catch (Exception ex)
             {
