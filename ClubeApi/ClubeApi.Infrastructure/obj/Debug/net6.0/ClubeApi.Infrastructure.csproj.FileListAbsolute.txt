@@ -67,3 +67,26 @@ C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeAp
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ref\ClubeApi.Infrastructure.dll
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.pdb
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.genruntimeconfig.cache
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Infrastructure.deps.json
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Infrastructure.runtimeconfig.json
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Infrastructure.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ref\ClubeApi.Infrastructure.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Infrastructure.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Application.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Domain.Core.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Domain.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Domain.Services.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Application.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Domain.Core.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Domain.Services.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\bin\Debug\net6.0\ClubeApi.Domain.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.AssemblyInfo.cs
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.csproj.CopyComplete
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ref\ClubeApi.Infrastructure.dll
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.pdb
+C:\Users\marco.almeida\source\repos\Projeto-estagiarios\backend-clube2.0\ClubeApi\ClubeApi.Infrastructure\obj\Debug\net6.0\ClubeApi.Infrastructure.genruntimeconfig.cache

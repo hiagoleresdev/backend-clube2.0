@@ -69,18 +69,11 @@ namespace ClubeApi.Infrastructure.Data.Repositories
 
         public int Validate(string usuario, string senha)
         {
-            try
-            {
-                Funcionario obj2 = context.Set<Funcionario>().Where(f => f.Usuario.Equals(usuario) && f.Senha.Equals(senha)).Single();
-                if (obj2 == null)
-                    return 0;
-                else
-                    return 1;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            Funcionario obj2 = context.Set<Funcionario>().Where(f => f.Usuario.Equals(usuario) && f.Senha.Equals(senha)).FirstOrDefault();
+            if (obj2 == null)
+                return 0;
+            else
+                return 1;
         }
     }
 }
