@@ -2,6 +2,7 @@
 using ClubeApi.Application.Interfaces.ApplicationServices;
 using ClubeApi.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace ClubeApi.Api.Controllers
 {
@@ -28,7 +29,11 @@ namespace ClubeApi.Api.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -40,13 +45,23 @@ namespace ClubeApi.Api.Controllers
             {
                 Categoria categoria = applicationServiceCategoria.GetById(id);
                 if (categoria == null)
-                    return NotFound();
+                {
+                    var result = new
+                    {
+                        message = "A categoria buscada não foi encontrada",
+                    };
+                    return NotFound(JsonConvert.SerializeObject(result));
+                }
                 else
                     return Ok(categoria);
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -57,11 +72,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceCategoria.Add(categoriaDTO);
-                return Ok("Categoria cadastrada com sucesso");
+                var result = new
+                {
+                    message = "Categoria cadastrada com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -72,11 +95,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceCategoria.Update(categoriaDTO);
-                return Ok("Categoria atualizada com sucesso");
+                var result = new
+                {
+                    message = "Categoria atualizada com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -87,11 +118,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceCategoria.Delete(id);
-                return Ok("Categoria deletada com sucesso");
+                var result = new
+                {
+                    message = "Categoria deletada com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
     }

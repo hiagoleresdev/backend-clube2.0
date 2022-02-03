@@ -17,34 +17,20 @@ namespace ClubeApi.Infrastructure.Data.Repositories
 
         public override IEnumerable<Dependente> GetAll()
         {
-            try
-            {
-                return context.Dependentes.Include("Socio").ToList();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return context.Dependentes.Include("Socio").ToList();
         }
 
         public override Dependente GetById(int id)
         {
-            try
+            IEnumerable<Dependente> dependentes = context.Dependentes.Include("Socio").ToList();
+            Dependente dependente = new Dependente();
+            foreach (Dependente d in dependentes)
             {
-                IEnumerable<Dependente> dependentes = context.Dependentes.Include("Socio").ToList();
-                Dependente dependente = new Dependente();
-                foreach (Dependente d in dependentes)
-                {
-                    if (d.Id == id)
-                        dependente = d;
-                }
+                if (d.Id == id)
+                    dependente = d;
+            }
 
-                return dependente;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return dependente;
         }
     }
 }

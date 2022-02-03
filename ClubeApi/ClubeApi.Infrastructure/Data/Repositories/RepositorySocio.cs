@@ -17,34 +17,20 @@ namespace ClubeApi.Infrastructure.Data.Repositories
 
         public override IEnumerable<Socio> GetAll()
         {
-            try
-            {
-                return context.Socios.Include("Categoria").ToList();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return context.Socios.Include("Categoria").ToList();
         }
 
         public override Socio GetById(int id)
         {
-            try
+            IEnumerable<Socio> socios = context.Socios.Include("Categoria").ToList();
+            Socio socio = new Socio();
+            foreach (Socio s in socios)
             {
-                IEnumerable<Socio> socios = context.Socios.Include("Categoria").ToList();
-                Socio socio = new Socio();
-                foreach(Socio s in socios)
-                {
-                    if(s.Id == id)
-                        socio = s;
-                }
+                if (s.Id == id)
+                    socio = s;
+            }
 
-                return socio;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return socio;
         }
     }
 }

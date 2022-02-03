@@ -2,6 +2,7 @@
 using ClubeApi.Application.Interfaces.ApplicationServices;
 using ClubeApi.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace ClubeApi.Api.Controllers
 {
@@ -28,7 +29,11 @@ namespace ClubeApi.Api.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -40,13 +45,23 @@ namespace ClubeApi.Api.Controllers
             {
                 Socio socio = applicationServiceSocio.GetById(id);
                 if (socio == null)
-                    return NotFound();
+                {
+                    var result = new
+                    {
+                        message = "O sócio buscado não foi encontrado",
+                    };
+                    return BadRequest(JsonConvert.SerializeObject(result));
+                }
                 else
                     return Ok(socio);
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -57,11 +72,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceSocio.Add(socioDTO);
-                return Ok("Sócio cadastrado com sucesso");
+                var result = new
+                {
+                    message = "Sócio cadastrado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -72,11 +95,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceSocio.Update(socioDTO);
-                return Ok("Sócio atualizado com sucesso");
+                var result = new
+                {
+                    message = "Sócio atualizado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -87,11 +118,19 @@ namespace ClubeApi.Api.Controllers
             try
             { 
                 applicationServiceSocio.Delete(id);
-                return Ok("Sócio deletado com sucesso");
+                var result = new
+                {
+                    message = "Sócio deletado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
     }

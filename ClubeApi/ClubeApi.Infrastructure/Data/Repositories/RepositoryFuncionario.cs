@@ -17,54 +17,26 @@ namespace ClubeApi.Infrastructure.Data.Repositories
 
         public void Add(Funcionario obj)
         {
-            try
-            {
-                context.Set<Funcionario>().Add(obj);
-                context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            context.Set<Funcionario>().Add(obj);
+            context.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            try
-            {
-                Funcionario obj = context.Set<Funcionario>().Find(id);
-                context.Remove(obj);
-                context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            Funcionario obj = context.Set<Funcionario>().Find(id);
+            context.Remove(obj);
+            context.SaveChanges();
         }
 
         public Funcionario GetById(int id)
         {
-            try
-            {
-                return context.Set<Funcionario>().Single(f => f.Id == id);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return context.Set<Funcionario>().Single(f => f.Id == id);
         }
 
         public void Update(Funcionario obj)
         {
-            try
-            {
-                context.Update(obj);
-                context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            context.Update(obj);
+            context.SaveChanges();
         }
 
         public int Validate(string usuario, string senha)

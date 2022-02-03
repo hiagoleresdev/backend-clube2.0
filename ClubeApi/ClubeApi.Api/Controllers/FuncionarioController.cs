@@ -2,6 +2,7 @@
 using ClubeApi.Application.Interfaces.ApplicationServices;
 using ClubeApi.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace ClubeApi.Api.Controllers
 {
@@ -26,13 +27,23 @@ namespace ClubeApi.Api.Controllers
             {
                 Funcionario funcionario = applicationServiceFuncionario.GetById(id);
                 if(funcionario == null)
-                    return NotFound();
+                {
+                    var result = new
+                    {
+                        message = "O funcionário buscado não foi encontrada",
+                    };
+                    return NotFound(JsonConvert.SerializeObject(result));
+                }
                 else
                     return Ok(funcionario);
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -43,11 +54,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceFuncionario.Add(FuncionarioDTO);
-                return Ok("Funcionário cadastrado com sucesso");
+                var result = new
+                {
+                    message = "Funcionário cadastrado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -58,11 +77,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceFuncionario.Update(funcionarioDTO);
-                return Ok("Funcionario atualizado com sucesso");
+                var result = new
+                {
+                    message = "Funcionário atualizado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -73,11 +100,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceFuncionario.Delete(id);
-                return Ok("Funcionário deletado com sucesso");
+                var result = new
+                {
+                    message = "Funcionário deletado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -88,13 +123,29 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 if (applicationServiceFuncionario.Validate(usuario, senha) == 1)
-                    return Ok("Login efetuado com sucesso");
+                {
+                    var result = new
+                    {
+                        message = "Login efetuado com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
                 else
-                    return NotFound("O usuário informado não existe");
+                {
+                    var result = new
+                    {
+                        message = "O usuário informado não existe",
+                    };
+                    return NotFound(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
     }

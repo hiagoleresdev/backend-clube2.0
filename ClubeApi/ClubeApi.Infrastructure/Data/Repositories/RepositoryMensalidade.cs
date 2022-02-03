@@ -17,34 +17,20 @@ namespace ClubeApi.Infrastructure.Data.Repositories
 
         public override IEnumerable<Mensalidade> GetAll()
         {
-            try
-            {
-                return context.Mensalidades.Include("Socio").ToList();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return context.Mensalidades.Include("Socio").ToList();
         }
 
         public virtual Mensalidade GetById(int id)
         {
-            try
+            IEnumerable<Mensalidade> Mensalidades = context.Mensalidades.Include("Socio").ToList();
+            Mensalidade Mensalidade = new Mensalidade();
+            foreach (Mensalidade m in Mensalidades)
             {
-                IEnumerable<Mensalidade> Mensalidades = context.Mensalidades.Include("Socio").ToList();
-                Mensalidade Mensalidade = new Mensalidade();
-                foreach (Mensalidade m in Mensalidades)
-                {
-                    if (m.Id == id)
-                        Mensalidade = m;
-                }
+                if (m.Id == id)
+                    Mensalidade = m;
+            }
 
-                return Mensalidade;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return Mensalidade;
         }
     }
 }

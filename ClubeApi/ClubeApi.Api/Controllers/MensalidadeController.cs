@@ -2,6 +2,7 @@
 using ClubeApi.Application.Interfaces.ApplicationServices;
 using ClubeApi.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace ClubeApi.Api.Controllers
 {
@@ -28,7 +29,11 @@ namespace ClubeApi.Api.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -40,13 +45,23 @@ namespace ClubeApi.Api.Controllers
             {
                 Mensalidade mensalidade = applicationServiceMensalidade.GetById(id);
                 if (mensalidade == null)
-                    return NotFound();
+                {
+                    var result = new
+                    {
+                        message = "A mensalidade buscada não foi encontrada",
+                    };
+                    return BadRequest(JsonConvert.SerializeObject(result));
+                }
                 else
                     return Ok(mensalidade);
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -56,15 +71,20 @@ namespace ClubeApi.Api.Controllers
         {
             try
             {
-                if (mensalidadeDTO == null)
-                    return NotFound();
-
                 applicationServiceMensalidade.Add(mensalidadeDTO);
-                return Ok("Mensalidade cadastrada com sucesso");
+                var result = new
+                {
+                    message = "Mensalidade cadastrada com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -75,11 +95,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceMensalidade.Update(mensalidadeDTO);
-                return Ok("Mensalidade atualizada com sucesso");
+                var result = new
+                {
+                    message = "Mensalidade atualizada com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -90,11 +118,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceMensalidade.Delete(id);
-                return Ok("Mensalidade deletada com sucesso");
+                var result = new
+                {
+                    message = "Mensalidade deletada com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
     }

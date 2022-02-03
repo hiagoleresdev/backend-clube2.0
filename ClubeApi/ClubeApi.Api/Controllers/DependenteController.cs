@@ -2,6 +2,7 @@
 using ClubeApi.Application.Interfaces.ApplicationServices;
 using ClubeApi.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace ClubeApi.Api.Controllers
 {
@@ -28,7 +29,11 @@ namespace ClubeApi.Api.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -40,13 +45,23 @@ namespace ClubeApi.Api.Controllers
             {
                 Dependente dependente = applicationServiceDependente.GetById(id);
                 if (dependente == null)
-                    return NotFound();
+                {
+                    var result = new
+                    {
+                        message = "O dependente buscado não foi encontrado",
+                    };
+                    return BadRequest(JsonConvert.SerializeObject(result));
+                }
                 else
                     return Ok(dependente);
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -57,11 +72,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceDependente.Add(dependenteDTO);
-                return Ok("Dependente cadastrado com sucesso");
+                var result = new
+                {
+                    message = "Dependente cadastrado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -72,11 +95,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceDependente.Update(dependenteDTO);
-                return Ok("Dependente atualizado com sucesso");
+                var result = new
+                {
+                    message = "Dependente atualizado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
 
@@ -87,11 +118,19 @@ namespace ClubeApi.Api.Controllers
             try
             {
                 applicationServiceDependente.Delete(id);
-                return Ok("Dependente deletado com sucesso");
+                var result = new
+                {
+                    message = "Dependente deletado com sucesso",
+                };
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex.Message}");
+                var result = new
+                {
+                    message = $"Erro: {ex.Message}",
+                };
+                return BadRequest(JsonConvert.SerializeObject(result));
             }
         }
     }
