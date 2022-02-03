@@ -4,6 +4,7 @@ using ClubeApi.Infrastructure.CrossCutting.IOC;
 using ClubeApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,6 +18,7 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+builder.Services.AddAutoMapper(typeof(AutoMapperSetup));
 
 // Configurando container de IOC com AutoFac
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
