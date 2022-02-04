@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "cKCw6tNA94xaHa7GD7LoYNKHwqPQnx3D4XfHCuRjhk0wBqRSGR+e8/7xyHINzzcI0H6VRFlVUJasU/IuboVWMw==",
+  "dgSpecHash": "kvetGU/4clvlClOEtar044BMa6BsEeUcb2Tkt4nzzNAECUSLr2pwC6hexVWXh6uoDY0tkcHPJh5dibEjKOH7Wg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hiago.leres\\Desktop\\DEV\\Clube dos estagiários\\backend\\ClubeApi\\ClubeApi.Application\\ClubeApi.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\felipe.guerrera\\backend-clube2.0\\ClubeApi\\ClubeApi.Application\\ClubeApi.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\felipe.guerrera\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\felipe.guerrera\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\felipe.guerrera\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\felipe.guerrera\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\felipe.guerrera\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\felipe.guerrera\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\felipe.guerrera\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

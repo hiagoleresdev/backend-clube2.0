@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hiago.leres\\Desktop\\DEV\\Clube dos estagiários\\backend\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj": {}
+    "C:\\Users\\felipe.guerrera\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hiago.leres\\Desktop\\DEV\\Clube dos estagiários\\backend\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj": {
+    "C:\\Users\\felipe.guerrera\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hiago.leres\\Desktop\\DEV\\Clube dos estagiários\\backend\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\felipe.guerrera\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj",
         "projectName": "ClubeApi.Domain",
-        "projectPath": "C:\\Users\\hiago.leres\\Desktop\\DEV\\Clube dos estagiários\\backend\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj",
-        "packagesPath": "C:\\Users\\hiago.leres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hiago.leres\\Desktop\\DEV\\Clube dos estagiários\\backend\\ClubeApi\\ClubeApi.Domain\\obj\\",
+        "projectPath": "C:\\Users\\felipe.guerrera\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\felipe.guerrera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\felipe.guerrera\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hiago.leres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\felipe.guerrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

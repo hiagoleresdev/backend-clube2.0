@@ -49,3 +49,20 @@ C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeAp
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.dll
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ref\ClubeApi.Application.dll
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.pdb
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\bin\Debug\net6.0\ClubeApi.Application.deps.json
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\bin\Debug\net6.0\ClubeApi.Application.dll
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\bin\Debug\net6.0\ref\ClubeApi.Application.dll
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\bin\Debug\net6.0\ClubeApi.Application.pdb
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\bin\Debug\net6.0\ClubeApi.Domain.Core.dll
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\bin\Debug\net6.0\ClubeApi.Domain.dll
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\bin\Debug\net6.0\ClubeApi.Domain.Core.pdb
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\bin\Debug\net6.0\ClubeApi.Domain.pdb
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.csproj.AssemblyReference.cache
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.AssemblyInfoInputs.cache
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.AssemblyInfo.cs
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.csproj.CopyComplete
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.dll
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ref\ClubeApi.Application.dll
+C:\Users\felipe.guerrera\backend-clube2.0\ClubeApi\ClubeApi.Application\obj\Debug\net6.0\ClubeApi.Application.pdb
