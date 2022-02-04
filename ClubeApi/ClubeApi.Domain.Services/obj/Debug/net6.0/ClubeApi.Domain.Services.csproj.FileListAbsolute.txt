@@ -49,3 +49,20 @@ C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeAp
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.dll
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ref\ClubeApi.Domain.Services.dll
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.pdb
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Services.deps.json
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Services.dll
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ref\ClubeApi.Domain.Services.dll
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Services.pdb
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Core.dll
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.dll
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.Core.pdb
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\bin\Debug\net6.0\ClubeApi.Domain.pdb
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.csproj.AssemblyReference.cache
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.AssemblyInfoInputs.cache
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.AssemblyInfo.cs
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.csproj.CoreCompileInputs.cache
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.csproj.CopyComplete
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.dll
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ref\ClubeApi.Domain.Services.dll
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Domain.Services\obj\Debug\net6.0\ClubeApi.Domain.Services.pdb

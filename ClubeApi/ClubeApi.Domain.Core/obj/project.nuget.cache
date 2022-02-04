@@ -1,16 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tfvavhXUusX/CZitqvXc2B+5ZkwfVSlt9QEAwt7jX+Ly81jhQ3RJYrq2gqvgxQOoME1DAq920mqMrUVLQlY/mQ==",
+  "dgSpecHash": "eKFW9CqCsET0F7VpqED0j+5m0c6b+dkLx4jB7YKCxWkh31eoACqrFhpzJOwmV0ax2GkjDPMoFig4jc2EejiOZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Core\\ClubeApi.Domain.Core.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Core\\ClubeApi.Domain.Core.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

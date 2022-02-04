@@ -1,5 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using ClubeApi.Application.AutoMapper;
 using ClubeApi.Infrastructure.CrossCutting.IOC;
 using ClubeApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;

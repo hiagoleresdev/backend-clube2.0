@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "JJG0zeRCyWJqF7oWMhnCOfXd+GuHJYh/iXUJZs3pUjprh+5uPYJHZ+wmYCC9viJEKJv5sIxqr9DwX9x9OZN8QQ==",
+  "dgSpecHash": "I7VAVYOdS4MciStjTp4fvtoYaJJy3fbiPbCENjWUs7VjC5eRA4UrIhSLvHaZXZ3J73QMjZwurTo2X2xu6dhiMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Application\\ClubeApi.Application.csproj",
+  "projectFilePath": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Application\\ClubeApi.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\pedro.tonhao\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\pedro.tonhao\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\pedro.tonhao\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\pedro.tonhao\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\pedro.tonhao\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\pedro.tonhao\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\pedro.tonhao\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -14,7 +14,7 @@
           "lib/net5.0/Autofac.dll": {}
         }
       },
-      "AutoMapper/11.0.0": {
+      "AutoMapper/11.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0"
@@ -661,7 +661,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AutoMapper": "11.0.0",
+          "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "ClubeApi.Domain.Core": "1.0.0"
         },
@@ -675,10 +675,6 @@
       "ClubeApi.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AutoMapper": "11.0.0",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0"
-        },
         "compile": {
           "bin/placeholder/ClubeApi.Domain.dll": {}
         },
@@ -690,8 +686,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AutoMapper": "11.0.0",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "ClubeApi.Domain": "1.0.0"
         },
         "compile": {
@@ -705,8 +699,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AutoMapper": "11.0.0",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "ClubeApi.Domain.Core": "1.0.0"
         },
         "compile": {
@@ -740,15 +732,15 @@
         "lib/netstandard2.1/Autofac.xml"
       ]
     },
-    "AutoMapper/11.0.0": {
-      "sha512": "+596AnKykYCk9RxXCEF4GYuapSebQtFVvIA1oVG1rrRkCLAC7AkWehJ0brCfYUbdDW3v1H/p0W3hob7JoXGjMw==",
+    "AutoMapper/11.0.1": {
+      "sha512": "WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
       "type": "package",
-      "path": "automapper/11.0.0",
+      "path": "automapper/11.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "automapper.11.0.0.nupkg.sha512",
+        "automapper.11.0.1.nupkg.sha512",
         "automapper.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
@@ -1985,8 +1977,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AutoMapper >= 11.0.0",
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Autofac >= 6.3.0",
       "ClubeApi.Application >= 1.0.0",
       "ClubeApi.Domain >= 1.0.0",
@@ -1998,24 +1988,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daniela.bonfim\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\pedro.tonhao\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Infrastructure\\ClubeApi.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Infrastructure\\ClubeApi.Infrastructure.csproj",
       "projectName": "ClubeApi.Infrastructure",
-      "projectPath": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Infrastructure\\ClubeApi.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\daniela.bonfim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Infrastructure\\obj\\",
+      "projectPath": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Infrastructure\\ClubeApi.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\pedro.tonhao\\.nuget\\packages\\",
+      "outputPath": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\daniela.bonfim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\pedro.tonhao\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2029,17 +2014,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Application\\ClubeApi.Application.csproj": {
-              "projectPath": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Application\\ClubeApi.Application.csproj"
+            "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Application\\ClubeApi.Application.csproj": {
+              "projectPath": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Application\\ClubeApi.Application.csproj"
             },
-            "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Core\\ClubeApi.Domain.Core.csproj": {
-              "projectPath": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Core\\ClubeApi.Domain.Core.csproj"
+            "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Core\\ClubeApi.Domain.Core.csproj": {
+              "projectPath": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Core\\ClubeApi.Domain.Core.csproj"
             },
-            "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Services\\ClubeApi.Domain.Services.csproj": {
-              "projectPath": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Services\\ClubeApi.Domain.Services.csproj"
+            "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Services\\ClubeApi.Domain.Services.csproj": {
+              "projectPath": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain.Services\\ClubeApi.Domain.Services.csproj"
             },
-            "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj": {
-              "projectPath": "C:\\Users\\daniela.bonfim\\Source\\Repos\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj"
+            "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj": {
+              "projectPath": "C:\\Pedro\\Programs\\backend-clube2.0\\ClubeApi\\ClubeApi.Domain\\ClubeApi.Domain.csproj"
             }
           }
         }
@@ -2054,14 +2039,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "AutoMapper": {
-            "target": "Package",
-            "version": "[11.0.0, )"
-          },
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "[11.0.0, )"
-          },
           "Autofac": {
             "target": "Package",
             "version": "[6.3.0, )"
@@ -2095,7 +2072,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

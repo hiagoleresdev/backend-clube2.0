@@ -226,3 +226,13 @@ C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeAp
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ref\ClubeApi.Api.dll
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.pdb
 C:\Users\hiago.leres\Desktop\DEV\Clube dos estagiários\backend\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.genruntimeconfig.cache
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.csproj.AssemblyReference.cache
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.AssemblyInfoInputs.cache
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.AssemblyInfo.cs
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.csproj.CoreCompileInputs.cache
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.dll
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ref\ClubeApi.Api.dll
+C:\Pedro\Programs\backend-clube2.0\ClubeApi\ClubeApi.Api\obj\Debug\net6.0\ClubeApi.Api.pdb
