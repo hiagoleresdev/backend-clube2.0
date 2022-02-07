@@ -3,8 +3,11 @@
     public interface IRepositoryBase<TEntity> where TEntity : class
     {
         //Métodos a serem desenvolvidos para esta classe
+        //Método para verificar cadastro repetido
+        int Verify(TEntity entity);
+
         //Método para cadastrar objeto
-        void Add(TEntity obj);
+        int Add(TEntity obj);
 
         //Método para atualizar objeto
         void Update(TEntity obj);

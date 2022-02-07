@@ -14,10 +14,27 @@ namespace ClubeApi.Infrastructure.Data.Repositories
         }
 
         //Métodos da interface
-        public void Add(TEntity obj)
+        public virtual int Verify(TEntity entity)
         {
-            context.Set<TEntity>().Add(obj);
-            context.SaveChanges();
+            TEntity entity1 = context.Set<TEntity>().Where(t => t.Equals(entity)).FirstOrDefault();
+            if(entity1 == null)
+                return 0;
+            else
+                return 1;
+        }
+
+        public int Add(TEntity obj)
+        {
+            int verificar = Verify(obj);
+
+            if (verificar == 0)
+            {
+                context.Set<TEntity>().Add(obj);
+                context.SaveChanges();
+                return 1;
+            }
+            else
+                return 0;
         }
 
         public void Delete(int id)

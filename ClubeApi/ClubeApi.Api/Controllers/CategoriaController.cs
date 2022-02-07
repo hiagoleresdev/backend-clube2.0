@@ -71,12 +71,24 @@ namespace ClubeApi.Api.Controllers
         {
             try
             {
-                applicationServiceCategoria.Add(categoriaDTO);
-                var result = new
+                int resultado = applicationServiceCategoria.Add(categoriaDTO);
+                
+                if(resultado == 1)
                 {
-                    message = "Categoria cadastrada com sucesso",
-                };
-                return Ok(JsonConvert.SerializeObject(result));
+                    var result = new
+                    {
+                        message = "Categoria cadastrada com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+                else
+                {
+                    var result = new
+                    {
+                        message = "A categoria informada já consta na base de dados",
+                    };
+                    return Conflict(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

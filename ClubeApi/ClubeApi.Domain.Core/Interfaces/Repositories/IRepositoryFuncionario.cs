@@ -5,8 +5,11 @@ namespace ClubeApi.Domain.Core.Interfaces.Repositories
     public interface IRepositoryFuncionario
     {
         //Métodos a serem desenvolvidos para esta classe
+        //Método para verificar cadastro repetido
+        int Verify(Funcionario funcionario);
+
         //Método para cadastrar funcionário
-        void Add(Funcionario obj);
+        int Add(Funcionario obj);
 
         //Método para selecionar funcionário por ID
         Funcionario GetById(int id);

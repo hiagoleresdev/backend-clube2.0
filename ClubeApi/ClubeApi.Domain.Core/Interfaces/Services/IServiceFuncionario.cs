@@ -5,7 +5,7 @@ namespace ClubeApi.Domain.Core.Interfaces.Services
     public interface IServiceFuncionario
     {
         //Métodos a serem desenvolvidos para esta classe(segue o padrão do repositório)
-        void Add(Funcionario obj);
+        int Add(Funcionario obj);
 
         Funcionario GetById(int id);
 

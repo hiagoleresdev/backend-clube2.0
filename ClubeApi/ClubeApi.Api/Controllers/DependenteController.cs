@@ -71,12 +71,24 @@ namespace ClubeApi.Api.Controllers
         {
             try
             {
-                applicationServiceDependente.Add(dependenteDTO);
-                var result = new
+                int resultado = applicationServiceDependente.Add(dependenteDTO);
+
+                if(resultado == 1)
                 {
-                    message = "Dependente cadastrado com sucesso",
-                };
-                return Ok(JsonConvert.SerializeObject(result));
+                    var result = new
+                    {
+                        message = "Dependente cadastrado com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+                else
+                {
+                    var result = new
+                    {
+                        message = "O dependente informado já consta na base de dados",
+                    };
+                    return Conflict(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

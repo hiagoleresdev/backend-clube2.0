@@ -71,12 +71,24 @@ namespace ClubeApi.Api.Controllers
         {
             try
             {
-                applicationServiceSocio.Add(socioDTO);
-                var result = new
+                int resultado = applicationServiceSocio.Add(socioDTO);
+                
+                if(resultado == 1)
                 {
-                    message = "Sócio cadastrado com sucesso",
-                };
-                return Ok(JsonConvert.SerializeObject(result));
+                    var result = new
+                    {
+                        message = "Sócio(a) cadastrado(a) com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+                else
+                {
+                    var result = new
+                    {
+                        message = "O(A) sócio(a) infromado(a) já consta na base de dados",
+                    };
+                    return Conflict(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

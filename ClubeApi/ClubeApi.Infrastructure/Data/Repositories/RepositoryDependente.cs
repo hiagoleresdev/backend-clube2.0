@@ -15,6 +15,15 @@ namespace ClubeApi.Infrastructure.Data.Repositories
             this.context = context;
         }
 
+        public override int Verify(Dependente dependente)
+        {
+            Pessoa pessoa = context.Pessoas.Where(p => p.Nome.Equals(dependente.Nome)).FirstOrDefault();
+            if(pessoa == null) 
+                return 0;
+            else
+                return 1;
+        }
+
         public override IEnumerable<Dependente> GetAll()
         {
             return context.Dependentes.Include("Socio").ToList();

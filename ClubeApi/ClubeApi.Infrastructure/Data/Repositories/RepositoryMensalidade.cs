@@ -15,6 +15,15 @@ namespace ClubeApi.Infrastructure.Data.Repositories
             this.context = context;
         }
 
+        public override int Verify(Mensalidade mensalidade)
+        {
+            Mensalidade mensalidade1 = context.Mensalidades.Where(m => m.DataVencimento.Equals(mensalidade.DataVencimento)).FirstOrDefault();
+            if (mensalidade1 == null)
+                return 0;
+            else
+                return 1;
+        }
+
         public override IEnumerable<Mensalidade> GetAll()
         {
             return context.Mensalidades.Include("Socio").ToList();

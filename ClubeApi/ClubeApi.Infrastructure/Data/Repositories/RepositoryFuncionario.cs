@@ -15,10 +15,29 @@ namespace ClubeApi.Infrastructure.Data.Repositories
             this.context = context;
         }
 
-        public void Add(Funcionario obj)
+        public int Verify(Funcionario funcionario)
         {
-            context.Set<Funcionario>().Add(obj);
-            context.SaveChanges();
+            Funcionario funcionario1 = context.Funcionarios.Where(f => f.Usuario.Equals(funcionario.Usuario)).FirstOrDefault();
+            Funcionario funcionario2 = context.Funcionarios.Where(f => f.Senha.Equals(funcionario.Senha)).FirstOrDefault();
+
+            if (funcionario1 == null && funcionario2 == null)
+                return 0;
+            else
+                return 1;
+        }
+
+        public int Add(Funcionario funcionario)
+        {
+            int verificar = Verify(funcionario);
+
+            if (verificar == 0)
+            {
+                context.Set<Funcionario>().Add(funcionario);
+                context.SaveChanges();
+                return 1;
+            }
+            else
+                return 0;
         }
 
         public void Delete(int id)

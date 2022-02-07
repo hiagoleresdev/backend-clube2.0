@@ -71,12 +71,24 @@ namespace ClubeApi.Api.Controllers
         {
             try
             {
-                applicationServiceMensalidade.Add(mensalidadeDTO);
-                var result = new
+                int resultado = applicationServiceMensalidade.Add(mensalidadeDTO);
+                
+                if(resultado == 1)
                 {
-                    message = "Mensalidade cadastrada com sucesso",
-                };
-                return Ok(JsonConvert.SerializeObject(result));
+                    var result = new
+                    {
+                        message = "Mensalidade cadastrada com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+                else
+                {
+                    var result = new
+                    {
+                        message = "A mensalidade informada já consta na base de dados",
+                    };
+                    return Conflict(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

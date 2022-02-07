@@ -15,9 +15,9 @@ namespace ClubeApi.Domain.Services.Services
             this.repository = repository;
         }
 
-        public void Add(Funcionario obj)
+        public int Add(Funcionario obj)
         {
-            repository.Add(obj);
+            return repository.Add(obj);
         }
 
         public void Delete(int id)

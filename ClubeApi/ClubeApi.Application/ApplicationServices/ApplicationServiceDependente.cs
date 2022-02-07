@@ -21,11 +21,11 @@ namespace ClubeApi.Application.ApplicationServices
             this.mapper = mapper;
         }
 
-        public void Add(DependenteDTO dependenteDTO)
+        public int Add(DependenteDTO dependenteDTO)
         {
             Socio socio = serviceSocio.GetById(dependenteDTO.FkSocio);
             Dependente dependente = mapper.MapperDTOToEntity(dependenteDTO, socio);
-            serviceDependente.Add(dependente);
+            return serviceDependente.Add(dependente);
         }
 
         public void Delete(int id)

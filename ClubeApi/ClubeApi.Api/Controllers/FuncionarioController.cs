@@ -53,12 +53,24 @@ namespace ClubeApi.Api.Controllers
         {
             try
             {
-                applicationServiceFuncionario.Add(FuncionarioDTO);
-                var result = new
+                int resultado = applicationServiceFuncionario.Add(FuncionarioDTO);
+                
+                if(resultado == 1)
                 {
-                    message = "Funcionário cadastrado com sucesso",
-                };
-                return Ok(JsonConvert.SerializeObject(result));
+                    var result = new
+                    {
+                        message = "Funcionário(a) cadastrado(a) com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+                else
+                {
+                    var result = new
+                    {
+                        message = "O(A) funcionário(a) informado(a) já consta na base de dados",
+                    };
+                    return Conflict(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

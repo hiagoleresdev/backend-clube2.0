@@ -13,5 +13,14 @@ namespace ClubeApi.Infrastructure.Data.Repositories
         {
             this.context = context;
         }
+
+        public override int Verify(Categoria categoria)
+        {
+            Categoria categoria1 = context.Categorias.Where(c => c.Tipo.Equals(categoria.Tipo)).FirstOrDefault();
+            if (categoria1 == null)
+                return 0;
+            else
+                return 1;
+        }
     }
 }
