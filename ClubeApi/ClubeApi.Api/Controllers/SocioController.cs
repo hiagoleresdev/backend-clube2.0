@@ -48,7 +48,7 @@ namespace ClubeApi.Api.Controllers
                 {
                     var result = new
                     {
-                        message = "O sócio buscado não foi encontrado",
+                        message = "O(A) sócio(a) buscado(a) não foi encontrado",
                     };
                     return BadRequest(JsonConvert.SerializeObject(result));
                 }
@@ -109,7 +109,7 @@ namespace ClubeApi.Api.Controllers
                 applicationServiceSocio.Update(socioDTO);
                 var result = new
                 {
-                    message = "Sócio atualizado com sucesso",
+                    message = "Sócio(a) atualizado(a) com sucesso",
                 };
                 return Ok(JsonConvert.SerializeObject(result));
             }
@@ -132,7 +132,7 @@ namespace ClubeApi.Api.Controllers
                 applicationServiceSocio.Delete(id);
                 var result = new
                 {
-                    message = "Sócio deletado com sucesso",
+                    message = "Sócio(a) deletado(a) com sucesso",
                 };
                 return Ok(JsonConvert.SerializeObject(result));
             }

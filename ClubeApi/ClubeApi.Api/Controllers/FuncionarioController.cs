@@ -91,7 +91,7 @@ namespace ClubeApi.Api.Controllers
                 applicationServiceFuncionario.Update(funcionarioDTO);
                 var result = new
                 {
-                    message = "Funcionário atualizado com sucesso",
+                    message = "Funcionário(a) atualizado(a) com sucesso",
                 };
                 return Ok(JsonConvert.SerializeObject(result));
             }
@@ -114,7 +114,7 @@ namespace ClubeApi.Api.Controllers
                 applicationServiceFuncionario.Delete(id);
                 var result = new
                 {
-                    message = "Funcionário deletado com sucesso",
+                    message = "Funcionário(a) deletado(a) com sucesso",
                 };
                 return Ok(JsonConvert.SerializeObject(result));
             }
@@ -146,7 +146,7 @@ namespace ClubeApi.Api.Controllers
                 {
                     var result = new
                     {
-                        message = "O usuário informado não existe",
+                        message = "O usuário e ou senha informados não existem",
                     };
                     return NotFound(JsonConvert.SerializeObject(result));
                 }
