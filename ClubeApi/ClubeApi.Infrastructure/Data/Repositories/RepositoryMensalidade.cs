@@ -41,5 +41,23 @@ namespace ClubeApi.Infrastructure.Data.Repositories
 
             return Mensalidade;
         }
+
+        public override int Delete(int id)
+        {
+            Mensalidade mensalidade = context.Mensalidades.Find(id);
+            if (mensalidade != null)
+            {
+                if (mensalidade.Quitada == true)
+                {
+                    context.Mensalidades.Remove(mensalidade);
+                    context.SaveChanges();
+                    return 1;
+                }
+                else
+                    return 0;
+            }
+            else
+                return -1;
+        }
     }
 }

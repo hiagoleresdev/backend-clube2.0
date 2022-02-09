@@ -28,9 +28,9 @@ namespace ClubeApi.Application.ApplicationServices
             return serviceMensalidade.Add(mensalidade);
         }
 
-        public void Delete(int id)
+        public int Delete(int id)
         {
-            serviceMensalidade.Delete(id);
+            return serviceMensalidade.Delete(id);
         }
 
         public IEnumerable<Mensalidade> GetAll()

@@ -41,5 +41,33 @@ namespace ClubeApi.Infrastructure.Data.Repositories
 
             return socio;
         }
+
+        public override int Delete(int id)
+        {
+            int x = 0;
+            IEnumerable<Mensalidade> mensalidades = context.Mensalidades.Include("Socio").ToList();
+            foreach(Mensalidade m in mensalidades)
+            {
+                if(m.Socio.Id == id)
+                {
+                    if(m.Quitada)
+                        x++;
+                }
+            }
+            if (x == 0)
+            {
+                Socio socio = context.Socios.Find(id);
+                if (socio != null)
+                {
+                    context.Socios.Remove(socio);
+                    context.SaveChanges();
+                    return 1;
+                }
+                else
+                    return -1;
+            }
+            else
+                return 0;
+        }
     }
 }

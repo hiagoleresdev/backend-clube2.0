@@ -28,9 +28,9 @@ namespace ClubeApi.Application.ApplicationServices
             return serviceSocio.Add(socio);
         }
 
-        public void Delete(int id)
+        public int Delete(int id)
         {
-            serviceSocio.Delete(id);
+            return serviceSocio.Delete(id);
         }
 
         public IEnumerable<Socio> GetAll()

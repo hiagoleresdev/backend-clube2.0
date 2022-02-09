@@ -23,7 +23,7 @@ namespace ClubeApi.Infrastructure.Data.Repositories
                 return 1;
         }
 
-        public int Add(TEntity obj)
+        public virtual int Add(TEntity obj)
         {
             int verificar = Verify(obj);
 
@@ -37,11 +37,17 @@ namespace ClubeApi.Infrastructure.Data.Repositories
                 return 0;
         }
 
-        public void Delete(int id)
+        public virtual int Delete(int id)
         {
             TEntity obj = context.Set<TEntity>().Find(id);
-            context.Set<TEntity>().Remove(obj);
-            context.SaveChanges();
+            if (obj != null)
+            {
+                context.Set<TEntity>().Remove(obj);
+                context.SaveChanges();
+                return 1;
+            }
+            else
+                return 0;
         }
 
         public virtual TEntity GetById(int id)

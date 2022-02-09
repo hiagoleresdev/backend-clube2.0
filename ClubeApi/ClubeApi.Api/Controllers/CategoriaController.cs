@@ -129,12 +129,31 @@ namespace ClubeApi.Api.Controllers
         {
             try
             {
-                applicationServiceCategoria.Delete(id);
-                var result = new
+                int resultado = applicationServiceCategoria.Delete(id);
+                if(resultado == 1)
                 {
-                    message = "Categoria deletada com sucesso",
-                };
-                return Ok(JsonConvert.SerializeObject(result));
+                    var result = new
+                    {
+                        message = "Categoria deletada com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+                else if(resultado == 0)
+                {
+                    var result = new
+                    {
+                        message = "A categoria não pode ser excluída por estar em utilização",
+                    };
+                    return Conflict(JsonConvert.SerializeObject(result));
+                }
+                else
+                {
+                    var result = new
+                    {
+                        message = "Ocorreu um erro na exclusão do item",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

@@ -10,7 +10,7 @@ namespace ClubeApi.Application.Interfaces.ApplicationServices
 
         void Update(SocioDTO socioDTO);
 
-        void Delete(int id);
+        int Delete(int id);
 
         IEnumerable<Socio> GetAll();
 

@@ -10,7 +10,7 @@ namespace ClubeApi.Application.Interfaces.ApplicationServices
 
         void Update(MensalidadeDTO mensalidadeDTO);
 
-        void Delete(int id);
+        int Delete(int id);
 
         //IEnumerable<MensalidadeDTO> GetAll();
         IEnumerable<Mensalidade> GetAll();

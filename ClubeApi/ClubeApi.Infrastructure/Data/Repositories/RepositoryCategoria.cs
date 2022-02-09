@@ -1,5 +1,6 @@
 ﻿using ClubeApi.Domain.Core.Interfaces.Repositories;
 using ClubeApi.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ClubeApi.Infrastructure.Data.Repositories
 {
@@ -21,6 +22,31 @@ namespace ClubeApi.Infrastructure.Data.Repositories
                 return 0;
             else
                 return 1;
+        }
+
+        public override int Delete(int id)
+        {
+            int x = 0;
+            IEnumerable<Socio> socios = context.Socios.Include("Categoria").ToList();
+            foreach (Socio socio in socios)
+            {
+                if (socio.Categoria.Id == id)
+                    x++;
+            }
+            if (x == 0)
+            {
+                Categoria categoria = context.Categorias.Find(id);
+                if(categoria != null)
+                {
+                    context.Categorias.Remove(categoria);
+                    context.SaveChanges();
+                    return 1;
+                }
+                else
+                    return -1;
+            }
+            else
+                return 0;
         }
     }
 }

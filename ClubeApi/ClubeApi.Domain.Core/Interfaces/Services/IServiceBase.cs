@@ -7,7 +7,7 @@
 
         void Update(TEntity obj);
 
-        void Delete(int id);
+        int Delete(int id);
 
         IEnumerable<TEntity> GetAll();
 

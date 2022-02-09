@@ -10,7 +10,7 @@ namespace ClubeApi.Application.Interfaces.ApplicationServices
 
         void Update(DependenteDTO dependenteDTO);
 
-        void Delete(int id);
+        int Delete(int id);
 
         IEnumerable<Dependente> GetAll();
 

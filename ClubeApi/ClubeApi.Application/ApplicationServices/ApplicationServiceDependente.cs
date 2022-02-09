@@ -28,9 +28,9 @@ namespace ClubeApi.Application.ApplicationServices
             return serviceDependente.Add(dependente);
         }
 
-        public void Delete(int id)
+        public int Delete(int id)
         {
-            serviceDependente.Delete(id);
+            return serviceDependente.Delete(id);
         }
 
         public IEnumerable<Dependente> GetAll()

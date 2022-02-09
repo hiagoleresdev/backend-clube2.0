@@ -129,12 +129,23 @@ namespace ClubeApi.Api.Controllers
         {
             try
             { 
-                applicationServiceSocio.Delete(id);
-                var result = new
+                int resultado = applicationServiceSocio.Delete(id);
+                if(resultado == 1)
                 {
-                    message = "Sócio(a) deletado(a) com sucesso",
-                };
-                return Ok(JsonConvert.SerializeObject(result));
+                    var result = new
+                    {
+                        message = "Sócio(a) deletado(a) com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+                else if(resultado == 0)
+                {
+                    var result = new
+                    {
+                        message = "O(A) sócio(a) não pode ser excluído por possuir mensalidade(s) não quitada(s)",
+                    };
+                    return Conflict(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

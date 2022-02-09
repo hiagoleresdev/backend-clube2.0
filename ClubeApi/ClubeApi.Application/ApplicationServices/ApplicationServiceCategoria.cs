@@ -25,9 +25,9 @@ namespace ClubeApi.Application.ApplicationServices
             return service.Add(categoria);
         }
 
-        public void Delete(int id)
+        public int Delete(int id)
         {
-            service.Delete(id);
+            return service.Delete(id);
         }
 
         public IEnumerable<Categoria> GetAll()

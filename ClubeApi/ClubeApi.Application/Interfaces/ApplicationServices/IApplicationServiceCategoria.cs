@@ -12,7 +12,7 @@ namespace ClubeApi.Application.Interfaces.ApplicationServices
 
         Categoria GetById(int id);
 
-        void Delete(int id);
+        int Delete(int id);
 
         IEnumerable<Categoria> GetAll();
     }
