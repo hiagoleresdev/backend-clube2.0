@@ -40,11 +40,17 @@ namespace ClubeApi.Infrastructure.Data.Repositories
                 return 0;
         }
 
-        public void Delete(int id)
+        public int Delete(int id)
         {
-            Funcionario obj = context.Set<Funcionario>().Find(id);
-            context.Remove(obj);
-            context.SaveChanges();
+            Funcionario obj = context.Funcionarios.Find(id);
+            if (obj != null)
+            {
+                context.Funcionarios.Remove(obj);
+                context.SaveChanges();
+                return 1;
+            }
+            else
+                return 0;
         }
 
         public Funcionario GetById(int id)

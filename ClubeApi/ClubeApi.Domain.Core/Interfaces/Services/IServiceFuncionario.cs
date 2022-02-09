@@ -11,7 +11,7 @@ namespace ClubeApi.Domain.Core.Interfaces.Services
 
         void Update(Funcionario obj);
 
-        void Delete(int id);
+        int Delete(int id);
 
         int Validate(string usuario, string senha);
     }

@@ -14,5 +14,10 @@ namespace ClubeApi.Domain.Services.Services
         {
             this.repository = repository;
         }
+
+        public void AddSimultaneously(Socio socio)
+        {
+            repository.AddSimultaneously(socio);
+        }
     }
 }

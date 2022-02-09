@@ -11,13 +11,15 @@ namespace ClubeApi.Application.ApplicationServices
         //Atributos de referência às estrutura de serviço e mapeamento
         private readonly IServiceSocio serviceSocio;
         private readonly IServiceCategoria serviceCategoria;
+        private readonly IServiceMensalidade serviceMensalidade;
         private readonly IMapperSocio mapper;
 
         //Construtor
-        public ApplicationServiceSocio(IServiceSocio serviceSocio, IServiceCategoria serviceCategoria, IMapperSocio mapper)
+        public ApplicationServiceSocio(IServiceSocio serviceSocio, IServiceCategoria serviceCategoria, IServiceMensalidade serviceMensalidade, IMapperSocio mapper)
         {
             this.serviceSocio = serviceSocio;
             this.serviceCategoria = serviceCategoria;
+            this.serviceMensalidade = serviceMensalidade;
             this.mapper = mapper;
         }
 
@@ -25,6 +27,7 @@ namespace ClubeApi.Application.ApplicationServices
         {
             Categoria categoria = serviceCategoria.GetById(socioDTO.FkCategoria);
             Socio socio = mapper.MapperDTOToEntity(socioDTO, categoria);
+            serviceMensalidade.AddSimultaneously(socio);
             return serviceSocio.Add(socio);
         }
 

@@ -59,5 +59,31 @@ namespace ClubeApi.Infrastructure.Data.Repositories
             else
                 return -1;
         }
+
+        public void AddSimultaneously(Socio socio)
+        {
+            for (int i = 1; i <= socio.Categoria.Meses; i++)
+            {
+                Mensalidade mensalidade = new Mensalidade();
+                mensalidade.Socio = socio;
+                mensalidade.ValorInicial = 298.20;
+                mensalidade.Juros = 8;
+                mensalidade.DataVencimento = this.DefinirVencimento(i);
+                mensalidade.Quitada = false;
+
+                context.Mensalidades.Add(mensalidade);
+                context.SaveChanges();
+            }
+        }
+
+        //Método para definir a data de vencimento 
+        public DateTime DefinirVencimento(int mes)
+        {
+            DateTime data_atual = DateTime.Today;
+            DateTime data_venc = data_atual.AddMonths(mes);
+            String data_venc_s = data_venc.ToString("dd/MM/yyyy");
+            data_venc = DateTime.ParseExact(data_venc_s, "d", null);
+            return data_venc;
+        }
     }
 }

@@ -10,10 +10,9 @@ namespace ClubeApi.Application.Interfaces.ApplicationServices
 
         void Update(FuncionarioDTO funcionarioDTO);
 
-        //FuncionarioDTO GetById(int id);
         Funcionario GetById(int id);
 
-        void Delete(int id);
+        int Delete(int id);
 
         int Validate(string usuario, string senha);
     }
