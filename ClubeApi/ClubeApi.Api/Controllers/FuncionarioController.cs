@@ -111,12 +111,23 @@ namespace ClubeApi.Api.Controllers
         {
             try
             {
-                applicationServiceFuncionario.Delete(id);
-                var result = new
+                int resultado = applicationServiceFuncionario.Delete(id);
+                if(resultado == 1)
                 {
-                    message = "Funcionário(a) deletado(a) com sucesso",
-                };
-                return Ok(JsonConvert.SerializeObject(result));
+                    var result = new
+                    {
+                        message = "Funcionário(a) deletado(a) com sucesso",
+                    };
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+                else
+                {
+                    var result = new
+                    {
+                        message = "Ocorreu um erro na exclusão do item",
+                    };
+                    return NotFound(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

@@ -146,6 +146,14 @@ namespace ClubeApi.Api.Controllers
                     };
                     return Conflict(JsonConvert.SerializeObject(result));
                 }
+                else
+                {
+                    var result = new
+                    {
+                        message = "Ocorreu um erro na exclusão do item",
+                    };
+                    return NotFound(JsonConvert.SerializeObject(result));
+                }
             }
             catch (Exception ex)
             {

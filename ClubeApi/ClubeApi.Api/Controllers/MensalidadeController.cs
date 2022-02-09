@@ -152,7 +152,7 @@ namespace ClubeApi.Api.Controllers
                     {
                         message = "Ocorreu um erro na exclusão do item",
                     };
-                    return Conflict(JsonConvert.SerializeObject(result));
+                    return NotFound(JsonConvert.SerializeObject(result));
                 }
             }
             catch (Exception ex)
