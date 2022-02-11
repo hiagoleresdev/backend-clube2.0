@@ -71,7 +71,7 @@ namespace ClubeApi.Infrastructure.Data.Repositories
                 mensalidade.DataVencimento = this.DefinirVencimento(i);
                 mensalidade.Quitada = false;
 
-                context.Mensalidades.Add(mensalidade);
+                context.Set<Mensalidade>().Add(mensalidade);
                 context.SaveChanges();
             }
         }

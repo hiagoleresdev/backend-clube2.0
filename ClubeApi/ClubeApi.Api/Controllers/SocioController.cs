@@ -85,7 +85,7 @@ namespace ClubeApi.Api.Controllers
                 {
                     var result = new
                     {
-                        message = "O(A) sócio(a) infromado(a) já consta na base de dados",
+                        message = "O(A) sócio(a) informado(a) já consta na base de dados",
                     };
                     return Conflict(JsonConvert.SerializeObject(result));
                 }

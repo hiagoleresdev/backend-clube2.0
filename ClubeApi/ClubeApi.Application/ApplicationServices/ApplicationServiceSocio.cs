@@ -27,8 +27,11 @@ namespace ClubeApi.Application.ApplicationServices
         {
             Categoria categoria = serviceCategoria.GetById(socioDTO.FkCategoria);
             Socio socio = mapper.MapperDTOToEntity(socioDTO, categoria);
-            serviceMensalidade.AddSimultaneously(socio);
-            return serviceSocio.Add(socio);
+            int resultado = serviceSocio.Add(socio);
+            if(resultado == 1)
+                serviceMensalidade.AddSimultaneously(socio);
+
+            return resultado;
         }
 
         public int Delete(int id)
